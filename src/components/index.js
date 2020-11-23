@@ -21,7 +21,7 @@ function contains(rec1,rec2){
 	const recAn=normalize(rec1);
 	const recBn=normalize(rec2);
 	if(
-		recAn.x1<=recBn.x1&&recAn.y1<=recBn.y1&&recAn.x2>=recBn.x2&&recAn.y2>=recBn.y2
+		rec1.x1<=rec2.x1&&rec1.y1<=rec2.y1&&rec1.x2>=rec2.x2&&rec1.y2>=rec2.y2
 	){
 		return true;
 	}
