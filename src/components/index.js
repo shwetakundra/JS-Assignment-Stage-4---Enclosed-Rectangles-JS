@@ -10,7 +10,7 @@ function updateStructure(rec1,rec2){
 	if(contains(rec1,rec2)){
 		const relativeDim=relative(rec1,rec2);
 		return{...rec1,children:[relativeDim]};
-	}else if(contains(rec1,rec2)){
+	}else if(contains(rec2,rec1)){
 	    const relativeDim=relative(rec2,rec1);
 		return{...rec2,children:[relativeDim]};
 	}else{
